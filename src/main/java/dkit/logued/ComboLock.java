@@ -8,15 +8,15 @@ public class ComboLock {
     private int secret2;
     private int secret3;
 
-    private ComboLockState comboLockState;  // Enum to store state of Lock
-                                            // See definition in ComboLockState.java
+    private ComboLockState comboLockState;  // Enum to store current state of Lock
+                                            // See enum definition in ComboLockState.java
 
     // constructor
     public ComboLock(int num1, int num2, int num3) {
-        this.secret1 = num1;
+        this.secret1 = num1;    // program the lock with the code to open the lock
         this.secret2 = num2;
         this.secret3 = num3;
-        this.comboLockState = ComboLockState.NONE_CORRECT;
+        this.comboLockState = ComboLockState.NONE_CORRECT;  // set initial state
     }
 
     public void reset() {
