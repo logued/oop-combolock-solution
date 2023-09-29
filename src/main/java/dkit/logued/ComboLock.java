@@ -4,9 +4,9 @@ public class ComboLock {
 
     // The three correct (secret) combination numbers for this ComboLock
     // are stored in order (Right,Left,Right), and initialized in constructor
-    int secret1;
-    int secret2;
-    int secret3;
+    private int secret1;
+    private int secret2;
+    private int secret3;
 
     private ComboLockState comboLockState;  // Enum to store state of Lock
                                             // See definition in ComboLockState.java
