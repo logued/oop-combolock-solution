@@ -3,9 +3,9 @@ package dkit.logued;
 public class ComboLock {
     // The three correct (secret) combination numbers for this ComboLock
     // are stored in order (Right,Left,Right), and initialized in constructor
-    private int secret1;
-    private int secret2;
-    private int secret3;
+    private final int secret1;
+    private final int secret2;
+    private final int secret3;
 
     private ComboLockState comboLockState;  // Enum to store current state of Lock
 
@@ -46,8 +46,8 @@ public class ComboLock {
     public boolean open() {
         if (comboLockState == ComboLockState.ALL_CORRECT)
             return true;
-        else
-            return false;
+
+        return false;
     }
 }
 
