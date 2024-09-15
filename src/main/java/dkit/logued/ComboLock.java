@@ -44,10 +44,18 @@ public class ComboLock {
     }
 
     public boolean open() {
-
         if (comboLockState == ComboLockState.ALL_CORRECT)
             return true;
         else
             return false;
     }
 }
+
+
+
+
+
+
+
+
+
