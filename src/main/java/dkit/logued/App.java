@@ -12,7 +12,7 @@ public class App
     }
 
     public void start() {
-        System.out.println("\n\n*********  Combination Lock Simulator App ***********");
+        System.out.println("\n\n*********  Combination Lock Simulator App - see Exercise ***********");
 
         ComboLock lock = new ComboLock( 30,15,35);
 
